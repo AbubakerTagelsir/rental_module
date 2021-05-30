@@ -27,6 +27,7 @@
         'views/amenities.xml',
         'views/property_type.xml',
         'views/property.xml',
+        'views/templates.xml',
         ],
     # only loaded in demonstration mode
     'demo': [

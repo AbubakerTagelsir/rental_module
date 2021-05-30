@@ -65,11 +65,14 @@
                                     <strong class="o_kanban_record_title">
                                         <field name="name"/>
                                     </strong>
+                                    <div t-if="record.city_id.value">
+                                        City: <t t-esc="record.city_id.value"/>
+                                    </div>
                                     <div t-if="record.area.value">
-                                        <t t-esc="record.area.value"/>
+                                        Area: <t t-esc="record.area.value"/> Sq. Meter
                                     </div>
                                     <div t-if="record.price_rent.value">
-                                        <t t-esc="record.price_rent.value"/>
+                                        Price: <t t-esc="record.price_rent.value"/> AED/Year
                                     </div>
                                 </div>
                             </div>
