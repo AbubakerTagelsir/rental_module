@@ -14,8 +14,8 @@
 
     <record id="group_rental_manager" model="res.groups">
         <field name="name">Manager</field>
-        <!-- <field name="implied_ids" eval="[(4, ref('rental_module.group_rental_officer'))]"/> -->
-        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <field name="implied_ids" eval="[(4, ref('rental_module.group_rental_officer'))]"/>
+        <!-- <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/> -->
         <field name="category_id" ref="module_category_rental"/>
     </record>
 
