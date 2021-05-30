@@ -23,6 +23,9 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'views/furnishing.xml',
+        'views/amenities.xml',
+        'views/property_type.xml',
         ],
     # only loaded in demonstration mode
     'demo': [
