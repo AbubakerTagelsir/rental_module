@@ -9,9 +9,9 @@
             <field name="arch" type="xml">
                 <form string="Properties">
                     <header>
-                        <button name="action_submit" class="oe_highlight" states="new" type="object" string="Submit"/>
-                        <button name="action_approve" type="object" class="oe_highlight"  states="renting" string="Approve"/>
-                        <button name="action_refuse" type="object" class="oe_danger" states="renting" string="Refuse"/>
+                        <button name="action_submit" class="oe_highlight" states="new" type="object" string="Submit" groups="rental_module.group_rental_officer"/>
+                        <button name="action_approve" type="object" class="oe_highlight"  states="renting" string="Approve" groups="rental_module.group_rental_manager"/>
+                        <button name="action_refuse" type="object" class="oe_danger" states="renting" string="Refuse" groups="rental_module.group_rental_manager"/>
                         <field name="state" widget="statusbar"/>
                     </header>
                     <sheet>

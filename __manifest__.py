@@ -22,6 +22,7 @@
 
     # always loaded
     'data': [
+        'security/rental_security.xml',
         'security/ir.model.access.csv',
         'views/furnishing.xml',
         'views/amenities.xml',
