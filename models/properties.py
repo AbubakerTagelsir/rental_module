@@ -14,7 +14,7 @@ class Property(models.Model):
     bedrooms = fields.Integer(string='Bedrooms')
     bathrooms = fields.Integer(string='Bathrooms')
     property_state = fields.Selection(string='Property State', selection=[('rented', 'Rented'), ('occupied', 'Occupied'),])
-    amenties = fields.Many2many(comodel_name='property.amenities', string='Amenities')
+    amenities = fields.Many2many(comodel_name='property.amenities', string='Amenities')
     furnishing = fields.Many2many(comodel_name='property.furnishing', string='Furnishing')
     property_type_id = fields.Many2one(comodel_name='property.type', string="Property Type")
     

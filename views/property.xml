@@ -9,10 +9,12 @@
             <field name="arch" type="xml">
                 <form string="Properties">
                     <sheet>
+                            <field name="photo" widget="image" options="{'preview_image':'photo', 'size':[100,100]}" nolabel="1"/>
                         <group>
+                            <field name="name"/>                        
+                        </group>
+                        <group col="4" colspan="4">
                             <!-- Add your fields here -->
-                            <field name="photo"/>
-                            <field name="name"/>
                             <field name="city_id"/>
                             <field name="property_type_id"/>
                             <field name="bedrooms"/>
@@ -21,6 +23,15 @@
                             <field name="price_rent"/>
                             <field name="property_state"/>
                         </group>
+
+                        <notebook>
+                            <page name="amenities" string="Amenities">
+                                <field name="amenities"/>
+                            </page>
+                            <page name="furnishing" string="Furnishing">
+                                <field name="furnishing"/>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
