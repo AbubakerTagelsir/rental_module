@@ -8,6 +8,12 @@
             <field name="model">property.property</field>
             <field name="arch" type="xml">
                 <form string="Properties">
+                    <header>
+                        <button name="action_submit" class="oe_highlight" states="new" type="object" string="Submit"/>
+                        <button name="action_approve" type="object" class="oe_highlight"  states="renting" string="Approve"/>
+                        <button name="action_refuse" type="object" class="oe_danger" states="renting" string="Refuse"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
                     <sheet>
                             <field name="photo" widget="image" options="{'preview_image':'photo', 'size':[100,100]}" nolabel="1"/>
                         <group>

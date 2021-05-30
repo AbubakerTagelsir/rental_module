@@ -17,4 +17,15 @@ class Property(models.Model):
     amenities = fields.Many2many(comodel_name='property.amenities', string='Amenities')
     furnishing = fields.Many2many(comodel_name='property.furnishing', string='Furnishing')
     property_type_id = fields.Many2one(comodel_name='property.type', string="Property Type")
+    state = fields.Selection(string='Status', selection=[('new', 'New'), ('renting', 'Renting'),('rented', 'Rented'), ('occupied', 'Occupied'),], default="new")
+
+    def action_submit(self):
+        self.state = 'renting'
+
+    def action_approve(self):
+        self.state = 'rented'
+
+    def action_refuse(self):
+        self.state = 'occupied'
+
     
