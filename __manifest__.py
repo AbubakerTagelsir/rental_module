@@ -26,6 +26,7 @@
         'views/furnishing.xml',
         'views/amenities.xml',
         'views/property_type.xml',
+        'views/property.xml',
         ],
     # only loaded in demonstration mode
     'demo': [
